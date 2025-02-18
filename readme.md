@@ -22,13 +22,18 @@
 
 #### how to view test results (including *screenshots*):
  - `npx playwright show-report`
+ - in order to view the rendered canvas in the report, you need to open the trace window 
+    - ![from here](resources/readme-1.png)
+ - then check the option to do so from the top right corner
+    - ![then here](resources/readme-2.png)
 
 --- 
 
-# Future improvements:
+# Future improvements to test & framework:
  - as it stands, using specification.spec.js we can test multiple languages - just need to add the other locales to the localisation object
- - break down different localisation language strings into separate files and granulate strings into smaller strings
- - add tags to tests to run specific tests
+ - in order to test the localisation for the menus in this assignment, we don't need to navigate the game menus, as we can get the information from the DOM
  - integrate with the CI system available in the project
+ - add tags to tests to run specific tests
  - annotate tests with links to specification and/or task management platform
- - 
+ - break down different localisation language strings into separate files and granulate strings into smaller strings
+ - we could even expand the test for canvas-hidden elements to test the localisation of the game - playwright allows searching for images OR we could implement our own OCR

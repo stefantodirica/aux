@@ -35,6 +35,7 @@ exports.GamePage = class GamePage {
   }
 
   // this can be used to load a game with a specific language - without going through the main page
+  // the actual game can also be parametrized 
   async goto(language) {
     await this.page.goto('https://cdn-replay-eu.avatarux.app/arcana-pop/index.html?game=arcana-pop&wallet=demo&operator=demo&key=&server=https%3A%2F%2Freplay-eu.avatarux.app&language='+language+'&provider=avatarux&channel=desktop&rgs=avatarux-rgs');
     await this.waitForGameLoad();
