@@ -35,5 +35,6 @@
  - integrate with the CI system available in the project
  - add tags to tests to run specific tests
  - annotate tests with links to specification and/or task management platform
+ - we could listen to events for certain actions - currently we could use this to know when the game finished loading, how the game was interacted with (spin start/end, betchange, etc); other information could be provided this way as well
  - break down different localisation language strings into separate files and granulate strings into smaller strings
  - we could even expand the test for canvas-hidden elements to test the localisation of the game - playwright allows searching for images OR we could implement our own OCR
